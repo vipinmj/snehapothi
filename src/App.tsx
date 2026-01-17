@@ -102,9 +102,6 @@ export default function App() {
     'December 2025',
     'January 2026'
   ];
-  const currentDate = new Date();
-  const currentMonthName = `${currentDate.toLocaleString('default', { month: 'long', })} ${currentDate.getFullYear()}`;
-
   return (
     <Layout style={{ minHeight: '100vh', background: '#f7f9fb' }}>
       <Header style={{ background: '#fff', borderBottom: '1px solid #f0f0f0' }}>
