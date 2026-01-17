@@ -119,5 +119,28 @@ export type Entry = {
     { dateText: "22.11.2025", mandalam: "കോട്ടുകാൽ" },
     { dateText: "23.11.2025", mandalam: "വെട്ടൂർ" },
     { dateText: "24.11.2025", mandalam: "വിതുര" },
-    { dateText: "25.11.2025", mandalam: "", tbd: true }
+    { dateText: "25.11.2025", mandalam: "", tbd: true },
+      // RCC Schedule – January 2026
+    { dateText: "11.01.2026", mandalam: "കരവാരം",  },
+    { dateText: "12.01.2026", mandalam: "വട്ടിയൂർക്കാവ്", },
+    { dateText: "13.01.2026", mandalam: "ശ്രീ വരാഹം",  },
+    { dateText: "14.01.2026", mandalam: "പൂന്തുറ", },
+    { dateText: "15.01.2026", mandalam: "വെമ്പായം", },
+    { dateText: "16.01.2026", mandalam: "വെള്ളനാട്",  },
+    { dateText: "17.01.2026", mandalam: "ആര്യൻകോട്", },
+    { dateText: "18.01.2026", mandalam: "കരമന", },
+    { dateText: "19.01.2026", mandalam: "പാങ്ങോട്",  },
+    { dateText: "20.01.2026", mandalam: "മണക്കാട്", },
+    { dateText: "21.01.2026", mandalam: "തൊളിക്കോട്", },
+    { dateText: "22.01.2026", mandalam: "പനവൂർ", },
+    { dateText: "23.01.2026", mandalam: "പട്ടം", },
+    { dateText: "24.01.2026", mandalam: "അഞ്ച്തെങ്ങ്",  },
+    { dateText: "25.01.2026", mandalam: "കാരോട്",},
+    { dateText: "26.01.2026", mandalam: "ആറ്റുകാൽ",},
+    { dateText: "27.01.2026", mandalam: "തിരുപുറം",  },
+    { dateText: "28.01.2026", mandalam: "പെരുമ്പഴുതുർ",  },
+    { dateText: "29.01.2026", mandalam: "പൂജപ്പുര",  },
+    { dateText: "30.01.2026", mandalam: "മംഗലാപുരം", },
+    { dateText: "31.01.2026", mandalam: "തമ്പാനൂർ",  }
+
   ]
