@@ -91,7 +91,7 @@ export default function App() {
           <Text type="secondary" style={{ display: 'block', fontSize: 12 }}>
             Indian Youth Congress • Trivandrum District
           </Text>
-          <Title level={4} style={{ margin: 0 }}>Sneha Pothi</Title>
+          <Title level={4} style={{ margin: 0 }}>സ്നേഹ പൊതി</Title>
         </div>
       </Space>
     </Col>
