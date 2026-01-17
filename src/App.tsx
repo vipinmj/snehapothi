@@ -73,13 +73,38 @@ export default function App() {
   // Group table data by month
   const groups = useMemo(() => {
     const by: Record<string, any[]> = {}
-    SCHEDULE.forEach((r) => { (by[r.month] ||= []).push(r) })
-    Object.values(by).forEach((arr) => arr.sort((a, b) => (a.date?.getTime()||0) - (b.date?.getTime()||0)))
+  
+    SCHEDULE.forEach((r) => {
+      if (!r.date) return
+  
+      const d = new Date(r.date)
+      const key = `${d.toLocaleString('default', { month: 'long' })} ${d.getFullYear()}`
+  
+      ;(by[key] ||= []).push(r)
+    })
+  
+    Object.values(by).forEach((arr) =>
+      arr.sort(
+        (a, b) =>
+          (a.date?.getTime() || 0) - (b.date?.getTime() || 0)
+      )
+    )
+  
     return by
   }, [])
+  
 
-  const monthOrder = ['August', 'September', 'October', 'November', 'December', 'Unknown'];
-  const currentMonthName = new Date().toLocaleString('en-IN', { month: 'long' });
+  const monthOrder = [
+    'August 2025',
+    'September 2025',
+    'October 2025',
+    'November 2025',
+    'December 2025',
+    'January 2026'
+  ];
+  const currentDate = new Date();
+  const currentMonthName = `${currentDate.toLocaleString('default', { month: 'long', })} ${currentDate.getFullYear()}`;
+
   return (
     <Layout style={{ minHeight: '100vh', background: '#f7f9fb' }}>
       <Header style={{ background: '#fff', borderBottom: '1px solid #f0f0f0' }}>
@@ -155,25 +180,27 @@ export default function App() {
         <Divider orientation="left">Full Schedule</Divider>
 
 
-      <Collapse
-      accordion
-      defaultActiveKey={ monthOrder.includes(currentMonthName) ? currentMonthName : 'August' }
-      items={monthOrder
-        .filter((m) => groups[m])
-        .map((month) => ({
-          key: month,
-          label: month,
-          children: (
-            <Table
-              size="middle"
-              rowKey="key"
-              dataSource={groups[month]}
-              columns={columns as any}
-              pagination={{ pageSize: 8 }}
-            />
-          )
-        }))}
-      />
+        <Collapse
+  accordion
+  defaultActiveKey={[...monthOrder].reverse().find((m) => groups[m])}
+  items={[...monthOrder]
+    .reverse()
+    .filter((m) => groups[m])
+    .map((month) => ({
+      key: month,
+      label: month,
+      children: (
+        <Table
+          size="middle"
+          rowKey="key"
+          dataSource={groups[month]}
+          columns={columns as any}
+          pagination={{ pageSize: 8 }}
+        />
+      )
+    }))}
+ />
+
 
       </Content>
 

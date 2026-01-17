@@ -25,7 +25,7 @@ export type Entry = {
     { dateText: "23.08.2025", mandalam: "പൂവച്ചൽ" },
     { dateText: "24.08.2025", mandalam: "ആറ്റിങ്ങൽ" },
     { dateText: "25.08.2025", mandalam: "കാട്ടാകട" },
-    { dateText: "26.08.2058", mandalam: "തിരുമല", suspect: true },
+    { dateText: "26.08.2025", mandalam: "തിരുമല", suspect: true },
     { dateText: "27.08.2025", mandalam: "കരവാരം" },
     { dateText: "28.08.2025", mandalam: "മംഗലപുരം" },
     { dateText: "29.08.2025", mandalam: "വഴുതക്കാട്" },
@@ -33,7 +33,7 @@ export type Entry = {
     { dateText: "31.08.2025", mandalam: "തൊളിക്കോട്" },
     // September 2025
     { dateText: "01.09.2025", mandalam: "വീഴിഞ്ഞം" },
-    { dateText: "02.09.2028", mandalam: "മലയിൻകീഴ്", suspect: true },
+    { dateText: "02.09.2025", mandalam: "മലയിൻകീഴ്" },
     { dateText: "03.09.2025", mandalam: "പൂന്തുറ" },
     { dateText: "04.09.2025", mandalam: "നേമം" },
     { dateText: "05.09.2025", mandalam: "ജില്ലാ കമ്മിറ്റി" },
@@ -65,7 +65,7 @@ export type Entry = {
     // October 2025
     { dateText: "01.10.2025", mandalam: "മടവൂർ" },
     { dateText: "02.10.2025", mandalam: "വട്ടിയൂർക്കാവ്" },
-    { dateText: "03.10.2055", mandalam: "കാരോട്", suspect: true },
+    { dateText: "03.10.2025", mandalam: "കാരോട്", suspect: true },
     { dateText: "04.10.2025", mandalam: "വെമ്പായം" },
     { dateText: "05.10.2025", mandalam: "വെള്ളനാട്" },
     { dateText: "06.10.2025", mandalam: "ആര്യൻകോട്" },
@@ -122,7 +122,7 @@ export type Entry = {
     { dateText: "25.11.2025", mandalam: "", tbd: true },
       // RCC Schedule – January 2026
     { dateText: "11.01.2026", mandalam: "കരവാരം",  },
-    { dateText: "12.01.2026", mandalam: "വട്ടിയൂർക്കാവ്", },
+    { dateText: "12.01.2026", mandalam: "വട്ടിയൂർക്കാവ്" },
     { dateText: "13.01.2026", mandalam: "ശ്രീ വരാഹം",  },
     { dateText: "14.01.2026", mandalam: "പൂന്തുറ", },
     { dateText: "15.01.2026", mandalam: "വെമ്പായം", },
@@ -141,6 +141,6 @@ export type Entry = {
     { dateText: "28.01.2026", mandalam: "പെരുമ്പഴുതുർ",  },
     { dateText: "29.01.2026", mandalam: "പൂജപ്പുര",  },
     { dateText: "30.01.2026", mandalam: "മംഗലാപുരം", },
-    { dateText: "31.01.2026", mandalam: "തമ്പാനൂർ",  }
+    { dateText: "31.01.2026", mandalam: "തമ്പാനൂർ"  }
 
   ]
