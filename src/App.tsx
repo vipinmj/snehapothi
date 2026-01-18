@@ -64,7 +64,7 @@ export default function App() {
       render: (_: any, r: any) => (
         <Space wrap>
           {r.tbd && <Tag> TDB </Tag>}
-          {r.suspect && <Tag color="orange">Check year</Tag>}
+          {r.suspect && <Tag color="orange">Cofirm with President</Tag>}
         </Space>
       )
     }
@@ -100,7 +100,8 @@ export default function App() {
     'October 2025',
     'November 2025',
     'December 2025',
-    'January 2026'
+    'January 2026',
+    'February 2026'
   ];
   return (
     <Layout style={{ minHeight: '100vh', background: '#f7f9fb' }}>
